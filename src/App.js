@@ -62,7 +62,7 @@ class App extends React.Component {
             Новая цитата
           </button>
           <a id="tweet-quote" href="https://twitter.com/intent/tweet">
-            <i class="fab fa-twitter-square" id="twitter-icon"></i>
+            <i className="fab fa-twitter-square" id="twitter-icon"></i>
           </a>
         </div>
       </div>
