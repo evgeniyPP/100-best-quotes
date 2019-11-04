@@ -28,11 +28,13 @@ class App extends React.Component {
   }
 
   pickRandomQuote() {
-    let randomIndex = Math.round(Math.random() * this.state.quotes.length - 1);
-    document.getElementById("text").innerHTML =
-      this.state.quotes[randomIndex].quote || this.state.quotes[0].quote;
-    document.getElementById("author").innerHTML =
-      this.state.quotes[randomIndex].author || this.state.quotes[0].author;
+    let randomIndex = Math.floor(Math.random() * this.state.quotes.length);
+    document.getElementById("text").innerHTML = this.state.quotes[
+      randomIndex
+    ].quote;
+    document.getElementById("author").innerHTML = this.state.quotes[
+      randomIndex
+    ].author;
     this.setRandomColor();
   }
 
